@@ -1,0 +1,48 @@
+<style>
+        .fullpage{
+                width: 100vh;
+        }
+        h2{
+                text-align: center;
+        }
+
+</style>
+
+
+<div class="title">
+        <h2>Login page</h2>
+</div>
+<div class="container fullpage">
+        <form #f="ngForm">
+                <div class="form-group">
+                        <label>CIN</label>
+                        <input type="text" class="form-control" name="cin" required minlength="8" [(ngModel)]="cin" #c="ngModel">
+                </div>
+                <div class="alert alert-danger" *ngIf="c.invalid && c.touched">
+                        <div *ngIf="c.errors?.['required']">le champ cin est obligatoire</div>
+                        <div *ngIf="c.errors?.['minlength']">le champ cin doit avoir une longeur plus que 8</div>
+                </div>
+
+                <div class="form-group">
+                        <label>Nom</label>
+                        <input type="text" class="form-control" name="nom" required pattern="[a-zA-Z]{3,12}" [(ngModel)]="name" #n="ngModel">
+                </div>
+                <div class="alert alert-danger" *ngIf="n.invalid && n.touched">
+                        <div *ngIf="n.errors?.['required']">le champ nom est obligatoire</div>
+                        <div *ngIf="n.errors?.['pattern']">le champ nom n'accept que des caractaires</div>
+                </div>
+                
+                <br>
+
+                <div class="form-group">
+                        <p>Vous etre : </p>
+                        <label>Etudient</label>
+                        <input type="radio" name="opt" id="etudient" (click)="fonction = 'etudient'"><br><br>
+                        <label>Enseignant</label>
+                        <input type="radio" name="opt" id="enseignant" (click)="fonction = 'enseignant'">
+                </div><br>
+
+                <button class="btn btn-success" [disabled]="f.invalid" [routerLink]="login()">Connecter</button>
+                
+        </form>
+</div>

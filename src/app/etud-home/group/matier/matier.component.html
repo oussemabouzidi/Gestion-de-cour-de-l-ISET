@@ -1,0 +1,13 @@
+<input type="text" placeholder="Chercher Matiere (all -> afficher touts les matieres)" class="form-control" [(ngModel)]="chercher">
+
+<div *ngFor="let m of Matieres" class="card">
+    <div *ngIf="m.nom == chercher || chercher == 'all' || chercher == 'All' || chercher==''">
+        <div class="card-body alert alert-warning">
+            <h5 class="card-title">{{ m.nom }}</h5>
+            <p class="card-text">coefficient {{ m.idMat }}</p>
+            <div class="card-body">
+                <app-cour [code]="m.idMat"></app-cour>
+            </div>
+        </div>
+    </div>
+</div>

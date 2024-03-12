@@ -1,0 +1,11 @@
+<button class="btn btn-success" (click)="afficherCommentaire()">{{button}} les commentaire</button><br>
+<div *ngIf="afficher">
+    <div *ngFor="let c of cmts">
+        <div *ngIf="c.id_cour == code" class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{c.entete}}</h5>
+                <p class="card-text">{{c.body}}</p>
+            </div>
+        </div>
+    </div>
+</div>

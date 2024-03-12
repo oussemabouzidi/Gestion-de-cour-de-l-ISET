@@ -1,0 +1,8 @@
+<div class="card-header" *ngIf="class">
+    <h2 class="card-title">{{ class.nom }}</h2>
+</div>
+<div class="card-body" *ngIf="class">
+    <div class="card-text">code de class : {{class.code_class}}</div>
+    <div class="card-text">Nombre de places : {{ class.nbr_place }}</div>
+</div>
+<app-matier></app-matier>

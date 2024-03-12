@@ -1,0 +1,27 @@
+<style>
+    .h2{
+        text-align: center;
+    }
+</style>
+<div class="container" *ngIf="enseingient">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Bienvenue Mr/Mdm {{ enseingient.nom}} {{ enseingient.prenom }}</h2>
+      </div>
+      <div class="card-body">
+        <div class="card-text">Cin : {{ enseingient.cin }}</div>
+        <div class="card-text">Matiere : {{enseingient.matiere}}</div>
+        <p class="card-text">Voici vous groupes : </p>
+        <div class="card-text alert alert-danger" *ngFor="let grp of enseingient.Class">
+            <p>{{grp}}</p>
+        </div>
+      </div>
+    </div>
+    <br><hr><br>
+    <div class="card-body" *ngIf="matier">
+      <div class="card-header">
+          <app-cour-ens [code]="matier.idMat"></app-cour-ens>
+      </div>
+    </div>
+</div>
+

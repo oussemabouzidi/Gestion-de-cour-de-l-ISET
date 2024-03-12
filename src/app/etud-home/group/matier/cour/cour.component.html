@@ -1,0 +1,14 @@
+<input type="text" class="form-control" [(ngModel)]="rechercher" placeholder="Chercher cour par id ou taper 111 pour afficher tous les cours"><br>
+<div *ngFor="let c of courMat">
+    <div *ngIf="c.id == rechercher || rechercher == 111">
+        <div class="card-body alert alert-success">
+            <h5 style="text-decoration: underline;">ID : {{c.id}}</h5><hr>
+            <h5 class="card-title">{{ c.nom }}</h5>
+            <div class="card-text">Date de cour : {{c.Date}}</div>
+            <div class="card-text">Description : {{ c.description }}</div>
+            <div class="card-text">Lien de cour : {{c.fichier}}</div>
+            <br><hr>
+            <app-commentaire [code]="c.id"></app-commentaire>
+        </div>
+    </div>
+</div>

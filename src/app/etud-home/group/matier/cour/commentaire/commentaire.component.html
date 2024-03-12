@@ -1,0 +1,24 @@
+<button class="btn btn-success" (click)="afficherCommentaire()">{{button}} les commentaire</button><br>
+<div *ngIf="afficher">
+    <div *ngFor="let c of cmts">
+        <div *ngIf="c.id_cour == code" class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{c.entete}}</h5>
+                <p class="card-text">{{c.body}}</p>
+            </div>
+        </div>
+    </div><br>
+    <form>
+        <p>Ajouter un commentaire</p>
+        <input type="number" class="form-control" placeholder="id commentaire obligatoire" required [(ngModel)]="NvCmt.id" name="id">
+        <div class="alert alert-danger" *ngIf="contorlId()">
+            le ID n'est pas correct
+        </div>
+        <input type="text" class="form-control" placeholder="Entete de commentaire" [(ngModel)]="NvCmt.entete" name="entete">      
+        <input type="text" class="form-control" placeholder="Avez vous une question ?" [(ngModel)]="NvCmt.body" name="body"><br>
+        <button class="btn btn-success" (click)="ajouterCommentaire()">Ajouter</button>
+        <div class="alert bg-warning" *ngIf="cmt_ajouter">
+            Commentaire ajouter avec success !
+        </div>
+    </form>
+</div>

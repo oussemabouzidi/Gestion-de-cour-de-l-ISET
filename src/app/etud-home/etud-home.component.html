@@ -1,0 +1,24 @@
+<style>
+    .h2{
+        text-align: center;
+    }
+</style>
+<div class="container" *ngIf="Etudient">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Bienvenue {{ Etudient.nom }} {{ Etudient.prenom }}</h2>
+      </div>
+      <div class="card-body">
+        <div class="card-text">Cin : {{ Etudient.cin }}</div>
+        <div class="card-text">Email : {{ Etudient.email }}</div>
+        <p class="card-text">Voici votre groupe : {{ Etudient.class }}</p>
+      </div>
+
+      <app-group [nom_group]="Etudient.class"></app-group>
+      
+    </div>
+
+  </div>
+  
+
+

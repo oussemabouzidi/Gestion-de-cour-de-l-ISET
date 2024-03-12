@@ -1,0 +1,280 @@
+{
+  "matieres": [
+    {
+      "idMat": 1,
+      "nom": "Programmation objet"
+    },
+    {
+      "idMat": 2,
+      "nom": "Framework cote client"
+    },
+    {
+      "idMat": 3,
+      "nom": "Modélisation"
+    },
+    {
+      "idMat": 4,
+      "nom": "developpement coté serveur php"
+    },
+    {
+      "idMat": 5,
+      "nom": "Administration Systeme"
+    },
+    {
+      "idMat": 6,
+      "nom": "Base de donnée"
+    }
+  ],
+  "cours": [
+    {
+      "id": 1,
+      "nom": "Class et objet",
+      "description": "une description de cour class et objet",
+      "Date": "25/11/2023",
+      "fichier": "link file 1",
+      "idMat": 1
+    },
+    {
+      "id": 9,
+      "nom": "Heritage",
+      "description": "une description de cour heritage",
+      "Date": "25/11/2023",
+      "fichier": "link file 9",
+      "idMat": 1
+    },
+    {
+      "id": 2,
+      "nom": "Introduction TypeScript",
+      "description": "une description de cour introduction typescript",
+      "Date": "25/10/2023",
+      "fichier": "link file 2",
+      "idMat": 2
+    },
+    {
+      "id": 3,
+      "nom": "Programmation objet avec php",
+      "description": "une description de cour programmation objet avec php",
+      "Date": "5/6/2023",
+      "fichier": "link file 3",
+      "idMat": 4
+    },
+    {
+      "id": 4,
+      "nom": "Diagramme de class",
+      "description": "une description de cour class et objet",
+      "Date": "25/11/2023",
+      "fichier": "link file 4",
+      "idMat": 3
+    },
+    {
+      "id": 5,
+      "nom": "Diagramme d'objet",
+      "description": "une description 5",
+      "Date": "1/10/2023",
+      "fichier": "link file 5",
+      "idMat": 3
+    },
+    {
+      "id": 6,
+      "nom": "Diagramme de sequence",
+      "description": "une description 6",
+      "Date": "5/8/2023",
+      "fichier": "link file 6",
+      "idMat": 3
+    },
+    {
+      "id": 7,
+      "nom": "Model entité association",
+      "description": "une description 7",
+      "Date": "5/6/2023",
+      "fichier": "link file 7",
+      "idMat": 6
+    },
+    {
+      "id": 8,
+      "nom": "Encapsulation",
+      "description": "une description 8",
+      "Date": "5/12/2023",
+      "fichier": "link file 8",
+      "idMat": 1
+    },
+    {
+      "id": 20,
+      "nom": "Polymorphisme",
+      "description": "description de cour polymorphisme",
+      "Date": "10/12/2023",
+      "fichier": "lien de cour",
+      "idMat": 1
+    },
+    {
+      "id": 10,
+      "nom": "Introduction Angular",
+      "description": "description de cour angular",
+      "Date": "10/11/2023",
+      "fichier": "lien de cour",
+      "idMat": 2
+    },
+    {
+      "id": 11,
+      "nom": "Interface",
+      "description": "description de cour angular",
+      "Date": "12/12/2023",
+      "fichier": "http/...",
+      "idMat": 2
+    }
+  ],
+  "groupes": [
+    {
+      "code_class": 1,
+      "nom": "DSI22",
+      "nbr_place": 25
+    },
+    {
+      "code_class": 2,
+      "nom": "DSI21",
+      "nbr_place": 25
+    }
+  ],
+  "etudiants": [
+    {
+      "cin": 14436212,
+      "nom": "oussema",
+      "prenom": "bouzidi",
+      "email": "bouzidioussema16@gmail.com",
+      "class": "DSI22"
+    },
+    {
+      "cin": 12345678,
+      "nom": "ali",
+      "prenom": "ben ali",
+      "email": "alibenali@gmail.com",
+      "class": "DSI22"
+    },
+    {
+      "cin": 98765432,
+      "nom": "foulen",
+      "prenom": "fouleni",
+      "email": "foulenfouleni@gmail.com",
+      "class": "DSI21"
+    },
+    {
+      "cin": 65432189,
+      "nom": "ahmed",
+      "prenom": "bouhmedd",
+      "email": "Ahmedbouhmeed@gmail.com",
+      "class": "DSI21"
+    }
+  ],
+  "Enseigenets": [
+    {
+      "cin": 12345678,
+      "nom": "mohamed",
+      "prenom": "ben alaya",
+      "matiere": "Programmation objet",
+      "Class": [
+        "DSI21",
+        "DSI22"
+      ]
+    },
+    {
+      "cin": 87654321,
+      "nom": "wided",
+      "prenom": "sghaier",
+      "matiere": "Programmation objet",
+      "Class": [
+        "DSI21",
+        "DSI22"
+      ]
+    },
+    {
+      "cin": 11223344,
+      "nom": "imtinene",
+      "prenom": "bousetta",
+      "matiere": "Framework cote client",
+      "Class": [
+        "DSI21",
+        "DSI22"
+      ]
+    }
+  ],
+  "Commentaire": [
+    {
+      "id": 1,
+      "entete": "cmt1",
+      "body": "le contenue de cmt1",
+      "id_cour": 1
+    },
+    {
+      "id": 2,
+      "entete": "cmt2",
+      "body": "le contenue de cmt2",
+      "id_cour": 1
+    },
+    {
+      "id": 3,
+      "entete": "cmt3",
+      "body": "le contenue de cmt3",
+      "id_cour": 2
+    },
+    {
+      "id": 4,
+      "entete": "cmt4",
+      "body": "le contenue de cmt4",
+      "id_cour": 2
+    },
+    {
+      "id": 5,
+      "entete": "cmt5",
+      "body": "le contenue de cmt5",
+      "id_cour": 3
+    },
+    {
+      "id": 6,
+      "entete": "cmt6",
+      "body": "le contenue de cmt6",
+      "id_cour": 4
+    },
+    {
+      "id": 7,
+      "entete": "cmt7",
+      "body": "le contenue de cmt7",
+      "id_cour": 5
+    },
+    {
+      "id": 8,
+      "entete": "cmt8",
+      "body": "le contenue de cmt8",
+      "id_cour": 6
+    },
+    {
+      "id": 9,
+      "entete": "cmt9",
+      "body": "le contenue de cmt9",
+      "id_cour": 7
+    },
+    {
+      "id": 10,
+      "entete": "cmt10",
+      "body": "le contenue de cmt10",
+      "id_cour": 8
+    },
+    {
+      "id": 11,
+      "entete": "cmt11",
+      "body": "le contenue de cmt11",
+      "id_cour": 9
+    },
+    {
+      "id": 12,
+      "entete": "cmt3",
+      "body": "le contenue de cmt3",
+      "id_cour": 1
+    },
+    {
+      "id": 15,
+      "entete": "c'est un commentaire",
+      "body": "c'est le contenue de commentaire",
+      "id_cour": 9
+    }
+  ]
+}
